@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f7f7f7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,17 +10,59 @@ body {
 
 .radio-container {
     text-align: center;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
 }
 
 h1 {
+    color: #333;
     margin-bottom: 20px;
 }
 
-audio {
+.player {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.player-controls {
+    display: flex;
+    align-items: center;
+}
+
+.play-btn {
+    width: 50px;
+    height: 50px;
+    background-color: #00bfa5;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-image: url('https://cdn-icons-png.flaticon.com/512/27/27223.png'); /* Icono Play */
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.play-btn.paused {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/149/149850.png'); /* Icono Pause */
+}
+
+.play-btn:hover {
+    background-color: #009688;
+}
+
+.volume-control {
+    width: 100px;
+}
+
+input[type="range"] {
     width: 100%;
-    border-radius: 5px;
+    cursor: pointer;
 }
