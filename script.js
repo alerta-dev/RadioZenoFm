@@ -15,5 +15,5 @@ playPauseBtn.addEventListener('click', () => {
 
 // Volume Control
 volumeSlider.addEventListener('input', () => {
-    audio.volume = volumeSlider.value;
+    audio.volume = volumeSlider.value / 100;
 });
