@@ -92,7 +92,7 @@ input[type="range"] {
 }
 
 /* otra fuente */
-.pixelify-sans-<uniquifier> {
+.pixelify-sans {
   font-family: "Pixelify Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
