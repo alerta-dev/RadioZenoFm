@@ -90,3 +90,12 @@ input[type="range"] {
     font-size: 12px; /* Tamaño pequeño */
     letter-spacing: 1px; /* Espaciado típico de estilo retro */
 }
+
+/* otra fuente */
+.pixelify-sans-<uniquifier> {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
